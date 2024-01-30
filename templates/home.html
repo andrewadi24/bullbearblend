@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block main %}
+<div class="hero container pb-5">
+    <div class="row">
+        <div class="col-12 col-lg-6 mt-4">
+            <h1>BullBearBlend: A free stock market simulation</h1>
+            <p>Begin your journey with BullBearBlend, where we equip you with the tools and insights to navigate the
+                stock market confidently. Whether you're making your first trade or managing a diverse portfolio, our
+                platform is designed to help you make informed decisions and maximize your investment potential. Join a
+                community of savvy investors and start making your financial growth ambitions a reality.</p>
+            <a href="/register" class="cta-button">Get Started</a>
+        </div>
+        <div class="col-12 col-lg-6 mt-4">
+            <img src="/static/hero.png" class="w-100"></img>
+        </div>
+    </div>
+</div>
+<section id="how-it-works" class="how-it-works-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>How It Works</h2>
+                <p class="lead">Your simple path to smart investing.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center feature">
+                <div class="icon-box">
+                    <i class="fa fa-user-plus icon"></i>
+                    <p class="circle">1</p>
+                    <h3>Sign Up</h3>
+                    <p>Create your free account in minutes and join the BullBearBlend community.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center feature">
+                <div class="icon-box">
+                    <i class="fa fa-search-dollar icon"></i>
+                    <p class="circle">2</p>
+                    <h3>Get quote</h3>
+                    <p>Use our real-time data to discover investment opportunities and market trends.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center feature">
+                <div class="icon-box">
+                    <i class="fa fa-chart-line icon"></i>
+                    <p class="circle">3</p>
+                    <h3>Start Trading</h3>
+                    <p>Buy and sell stocks with confidence using our intuitive trading platform.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% if error %}
+<p class="alert alert-danger mt-3">{{ error }}</p>
+{% endif %}
+{% endblock %}
+
+{% block error %}
+{% if error %}
+<p class="alert alert-danger mt-3">{{ error }}</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+<div class="container my-5">
+    <h2 class="text-center mb-4">Your Portfolio</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Symbol</th>
+                    <th scope="col">Name</th>
+                    <th scope="col" class="text-end">Shares</th>
+                    <th scope="col" class="text-end">Price</th>
+                    <th scope="col" class="text-end">TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                <tr>
+                    <td>{{ row.symbol }}</td>
+                    <td>{{ row.name }}</td>
+                    <td class="text-end">{{ row.shares }}</td>
+                    <td class="text-end">{{ row.price | usd }}</td>
+                    <td class="text-end">{{ row.total_price | usd }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot class="table-footer">
+                <tr>
+                    <td colspan="4" class="text-end fw-bold">Cash</td>
+                    <td class="text-end">{{ cash | usd }}</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="text-end fw-bold">TOTAL</td>
+                    <td class="text-end">{{ total | usd }}</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+{% endblock %}

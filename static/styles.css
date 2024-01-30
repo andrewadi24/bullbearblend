@@ -1,0 +1,263 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+   
+    
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+.hero h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #0a9396;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #94d2bd;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.feature {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.feature h2 {
+    font-size: 1.5em;
+}
+.footer {
+    background-color: #001219;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 600px) {
+    .features {
+        flex-direction: column;
+    }
+    .feature {
+        margin-bottom: 20px;
+    }
+}
+
+
+.login-form {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.form-control {
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: calc(100% - 22px); /* Adjusts for padding and border */
+}
+.btn-primary {
+    background-color: #005f73;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+.btn-primary:hover {
+    background-color: #0a9396;
+}
+/* Ensures the form elements fit nicely on mobile */
+@media (max-width: 768px) {
+    .form-control {
+        width: calc(100% - 22px);
+    }
+}
+
+.table {
+    margin-bottom: 0;
+    color: #212529;
+}
+
+.table thead th {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tfoot {
+    font-weight: bold;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.text-start {
+    text-align: left;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.border-0 {
+    border: none;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Assuming you have a class for currency formatting */
+.usd {
+    font-style: italic;
+}
+
+
+.alert {
+    margin-top: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+}
+
+.input-group .form-control {
+    margin-right: -1px; /* Ensures the input is connected to the button */
+}
+
+.btn-primary {
+    padding: 10px 20px; /* Larger click area */
+    border: none;
+}
+
+/* Additional media query for responsiveness */
+@media (max-width: 768px) {
+    .input-group .form-control,
+    .btn-primary {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .input-group {
+        flex-direction: column;
+    }
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.brand-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.brand-name {
+    font-size: 1.5em;
+    margin: 0;
+    color: #005f73; /* Adjust the color to match your theme */
+    font-weight: bold;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1;  /* Each feature will take equal space */
+    padding: 20px;
+    margin: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    min-width: 200px; /* Minimum width for smaller screens */
+}
+
+/* Ensuring text doesn't overflow and maintains padding */
+.feature h2, .feature p {
+    word-wrap: break-word;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #005f73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    margin:  auto!important;
+    text-align: center;
+    border: 2px solid black
+}
