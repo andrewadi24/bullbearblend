@@ -254,4 +254,5 @@ def sell():
                    session['user_id'], symbol, -amount, quote['price'])
 
         return redirect("/")
-    
+
+app.run()
