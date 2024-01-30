@@ -255,3 +255,4 @@ def sell():
 
         return redirect("/")
     
+app.run()
